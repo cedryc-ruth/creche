@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des marques{% endblock %}
+
+{% block body %}
+<div>
+    <h2>Liste des marques</h2>
+
+    <ul>
+    {% for brand in brands %}
+        <li>{{ brand.name }}</li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock %}
